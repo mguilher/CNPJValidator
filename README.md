@@ -87,16 +87,6 @@ Cada caractere da base é convertido para um valor numérico subtraindo 48 do se
 
 ---
 
-## Teste de validação
-
-Clone o repositório e adicione a referência ao projeto:
-
-```bash
-git clone https://github.com/mguilher/CNPJValidator.git
-```
-
----
-
 ## Caso queira testar no seu projeto
 
 ### Verificar se um CNPJ é válido — `IsValidCNPJ`
@@ -105,18 +95,18 @@ git clone https://github.com/mguilher/CNPJValidator.git
 using CNPJValidator;
 
 // CNPJs numéricos legados continuam válidos
-CnpjValidation.IsValidCNPJ("00.000.000/0001-91"); // true
+CnpjValidator.IsValidCNPJ("00.000.000/0001-91"); // true
 
 // Novo formato alfanumérico (com máscara)
-CnpjValidation.IsValidCNPJ("12.ABC.345/01AB-77"); // true
+CnpjValidator.IsValidCNPJ("12.ABC.345/01AB-77"); // true
 
 // Aceita letras minúsculas e caracteres extras na entrada — normaliza automaticamente
-CnpjValidation.IsValidCNPJ("12.abc.345/01ab-77"); // true
+CnpjValidator.IsValidCNPJ("12.abc.345/01ab-77"); // true
 
 // Retorna false para CNPJs inválidos
-CnpjValidation.IsValidCNPJ("12.ABC.345/01AB-35"); // false (dígitos verificadores errados)
-CnpjValidation.IsValidCNPJ("00000000000000"); // false (sequência uniforme)
-CnpjValidation.IsValidCNPJ(null); // false (não é string)
+CnpjValidator.IsValidCNPJ("12.ABC.345/01AB-35"); // false (dígitos verificadores errados)
+CnpjValidator.IsValidCNPJ("00000000000000"); // false (sequência uniforme)
+CnpjValidator.IsValidCNPJ(null); // false (não é string)
 ```
 
 ### Criar um CNPJ tipado — `Create`
