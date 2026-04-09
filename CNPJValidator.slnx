@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CNPJValidator.Test/CNPJValidator.Test.csproj" />
+  <Project Path="CNPJValidator/CNPJValidator.csproj" />
+</Solution>
