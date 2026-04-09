@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace CNPJValidator
 {
-    public static class CnpjValidation
+    public static class CnpjValidator
     {
         public static bool IsValidCNPJ(string document)
         {

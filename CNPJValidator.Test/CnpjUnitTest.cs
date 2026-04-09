@@ -101,9 +101,9 @@ namespace CNPJValidator.Test
         [Test]
         public void IsValid_RejectsNullAndWhitespace()
         {
-            Assert.That(CnpjValidation.IsValidCNPJ(null), Is.False);
-            Assert.That(CnpjValidation.IsValidCNPJ(""), Is.False);
-            Assert.That(CnpjValidation.IsValidCNPJ("   "), Is.False);
+            Assert.That(CnpjValidator.IsValidCNPJ(null), Is.False);
+            Assert.That(CnpjValidator.IsValidCNPJ(""), Is.False);
+            Assert.That(CnpjValidator.IsValidCNPJ("   "), Is.False);
         }
     }
 }

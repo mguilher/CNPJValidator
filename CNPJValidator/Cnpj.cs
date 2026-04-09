@@ -19,7 +19,7 @@ namespace CNPJValidator
                 return Result.Failure<Cnpj>(Errors.Errors.Cnpj.Empty);
             }
 
-            if (!CnpjValidation.IsValidCNPJ(cnpj))
+            if (!CnpjValidator.IsValidCNPJ(cnpj))
             {
                 return Result.Failure<Cnpj>(Errors.Errors.Cnpj.InvalidFormat);
             }
